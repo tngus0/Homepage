@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Recommendations</title>
+    <link rel="stylesheet" href="/menu1.css">
+</head>
+
+<body>
+    <header>
+        <h1>아침 메뉴 추천</h1>
+    </header>
+    <main>
+        <div class="menu-container">
+            <div class="menu-item" onclick="selectMenu('한식')">
+                <h2>한식</h2>
+            </div>
+            <div class="menu-item" onclick="selectMenu('중식')">
+                <h2>중식</h2>
+            </div>
+            <div class="menu-item" onclick="selectMenu('일식')">
+                <h2>일식</h2>
+            </div>
+            <div class="menu-item" onclick="selectMenu('양식')">
+                <h2>양식</h2>
+            </div>
+            <div class="menu-item" onclick="selectMenu('분식')">
+                <h2>분식</h2>
+            </div>
+        </div>
+        <div class="random-selection" onclick="selectRandomMenu()">
+            <div class="random-item">
+                <h2>Random</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Menu Recommendations </p>
+    </footer>
+    <script src="menu1.js"></script>
+</body>
+</html>

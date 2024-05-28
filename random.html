@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>클릭하면 나열되는 한국음식 예제</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>클릭하면 나열되는 한국음식</h1>
+
+  <h2 id="randomFood">오늘의 추천 음식: </h2>
+
+  <div class="section">
+    <h2>찌개류</h2>
+    <button onclick="toggleList(1)">된장찌개 보기</button>
+    <ul id="myList1" class="hidden">
+      <li>된장찌개</li>
+    </ul>
+
+    <button onclick="toggleList(2)">갈비탕 보기</button>
+    <ul id="myList2" class="hidden">
+      <li>갈비탕</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>밥류</h2>
+    <button onclick="toggleList(3)">비빔밥 보기</button>
+    <ul id="myList3" class="hidden">
+      <li>비빔밥</li>
+    </ul>
+
+    <button onclick="toggleList(4)">김치찌개 보기</button>
+    <ul id="myList4" class="hidden">
+      <li>김치찌개</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function toggleList(num) {
+    var list = document.getElementById("myList" + num);
+    if (list.style.display === "none") {
+      list.style.display = "block";
+    } else {
+      list.style.display = "none";
+    }
+  }
+
+  window.onload = function() {
+    var foods = [
+      "된장찌개",
+      "갈비탕",
+      "비빔밥",
+      "김치찌개"
+    ];
+
+    var randomFood = foods[Math.floor(Math.random() * foods.length)];
+    document.getElementById("randomFood").innerText += randomFood;
+  };
+</script>
+
+</body>
+</html>

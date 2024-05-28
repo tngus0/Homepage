@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한식</title>
+<link rel="stylesheet" href="ss.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>한식</h1>
+
+  <div class="section">
+    <button onclick="toggleList(1)">밥 종류</button>
+    <ul id="myList1" class="hidden">
+      <li>비빔밥</li>
+      <li>김밥</li>
+      <li>제육덮밥</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <button onclick="toggleList(2)">국 종류</button>
+    <ul id="myList2" class="hidden">
+      <li>김치찌개</li>
+      <li>된장찌개</li>
+      <li>순대국</li>
+      <li>부대찌개</li>
+      <li>짜글이</li>
+      <li>콩나물국</li>
+      <li>미역국</li>
+      <li>청국장</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <button onclick="toggleList(3)">반찬류</button>
+    <ul id="myList3" class="hidden">
+      <li>갈치조림</li>
+      <li>갈비탕</li>
+      <li>닭갈비</li>
+      <li>불고기</li>
+      <li>제육볶음</li>
+      <li>찜닭</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <button onclick="toggleList(4)"></button>
+    <ul id="myList4" class="hidden">
+      <li>감자탕</li>
+      <li>해물파전</li>
+      <li>쭈꾸미</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function toggleList(num) {
+    var list = document.getElementById("myList" + num);
+    if (list.style.display === "none") {
+      list.style.display = "block";
+    } else {
+      list.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
+

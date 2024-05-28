@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 200px; /* 크기 조정 */
+    height: 200px; /* 크기 조정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.menu-item h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.menu-item:hover {
+    transform: scale(1.1);
+}
+
+.random-selection {
+    margin-top: 2rem;
+}
+
+.random-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 250px; /* 크기 조정 */
+    height: 250px; /* 크기 조정 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.random-item h2 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.random-item:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+.selected-menu {
+    transform: scale(1.2); /* 선택된 원의 크기를 키우는 효과 */
+    background-color: #ff6347; /* 선택된 원의 배경색을 변경 */
+    z-index: 1; /* 선택된 원을 다른 원 위로 올리기 */
+}
+
+

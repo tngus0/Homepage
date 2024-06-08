@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>오늘의 메뉴 추천</title>
+
+    <link rel="stylesheet" href="../CSS/Home.css">
+
+    <link rel="stylesheet" href="../CSS/HomeSame.css">
+    <!--    banner까지 값-->
+    <link rel="stylesheet" href="../CSS/ButtonReset.css">
+    <!--    a링크 특성들 없앰-->
+    <link rel="stylesheet" href="../CSS/dropDown.css">
+<!-- 양식 드롭다운-->
+</head>
+<body>
+<div id="container">
+    <div id="main_menu">
+        <div id="top">
+            <div id="icon">
+                <a href="Home.html">오늘의 메뉴 추천</a>
+            </div>
+            <div id="menu">
+                <div>
+                    <a href="Korean.html">한식</a>
+                </div>
+                <div>
+                    <a href="Chinese.html">중식</a>
+                </div>
+                <div>
+                    <a href="Japanese.html">일식</a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <span class="dropbtn_icon">양식</span>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">프랑스</a>
+                        <a href="#">이탈리아</a>
+                        <a href="#">기타 유럽음식</a>
+                        <a href="#">북미 / 남미</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="Local.html">분식</a>
+                </div>
+                <div>
+                    <a href="Korean.html">카페/디저트</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mid">
+        <div id="banner">
+            <div id="carousel">
+                <div class="cell">
+                    <img src="../이미지/배경1.jpg" alt="">
+                </div>
+                <div class="cell">
+                    <img src="../이미지/배경2.jpg" alt="">
+                </div>
+                <div class="cell">
+                    <img src="../이미지/배경5.jpg" alt="\">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="bot">
+        <div id="botLeft">
+            <div id="manTopRank">
+                <div id="manTitle">
+                    남자 Top 3
+                </div>
+                <div id="manMenuContainer">
+                    <div id="Man">
+                        <div id="manCarousel">
+                            <div class="manMenuCell">
+                                <img src="../이미지/배경3.jpg" alt="">
+                            </div>
+                            <div class="manMenuCell">
+                                <img src="../이미지/배경7_1.jpg" alt="">
+                            </div>
+                            <div class="manMenuCell">
+                                <img src="../이미지/배경.11.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="womanTopRank">
+                <div id="womanTitle">
+                    여자 Top 3
+                </div>
+                <div id="womanMenuContainer">
+                    <div id="Woman">
+                        <div id="womanCarousel">
+                            <div class="womanMenuCell">
+                                <img src="../이미지/배경3.jpg" alt="">
+                            </div>
+                            <div class="womanMenuCell">
+                                <img src="../이미지/배경7_1.jpg" alt="">
+                            </div>
+                            <div class="womanMenuCell">
+                                <img src="../이미지/배경.11.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="botRight">
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../JS/자동슬라이드.js"></script>
+<script src="../JS/ManSlide.js"></script>
+<script src="../JS/WomanSlide.js"></script>
+
+</body>
+</html>

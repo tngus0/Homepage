@@ -1,0 +1,31 @@
+/*body, img {margin: 0;}*/
+
+img {
+    width: 500px;
+    height: 500px;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    /*img크기와 동일하게 적용(보이는 부분이기 때문)*/
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    overflow: hidden;
+    /*img가 container보다 크게된다면 안보이게 설정*/
+    /*만약 hidden을 안하면 늘어진 이미가 옆으로 움직이는 것으로 보임*/
+}
+
+#carousel {
+    display: flex;
+    transition: all 0.5s;
+}
+
+
+#preButton,
+#nextButton {
+    cursor: pointer;
+    border: 1px solid black;
+    display: inline-block;
+}

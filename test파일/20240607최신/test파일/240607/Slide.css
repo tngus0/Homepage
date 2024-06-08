@@ -1,0 +1,19 @@
+img {
+    width: 1920px;
+    height: 1080px;
+}
+
+#container {
+    width: 1920px;
+    height: 1080px;
+    /*img크기와 동일하게 적용(보이는 부분이기 때문)*/
+    /*position: absolute;*/
+    overflow: hidden;
+    /*img가 container보다 크게된다면 안보이게 설정*/
+    /*만약 hidden을 안하면 늘어진 이미가 옆으로 움직이는 것으로 보임*/
+}
+
+#carousel {
+    display: flex;
+    transition: all 4s ;
+}

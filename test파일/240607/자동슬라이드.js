@@ -6,12 +6,12 @@ const $carousel = document.querySelector("#carousel");
 
 const nextEvent = () => {
     if (current !== carousel_Length) {
-        $carousel.style.transform = `translateX(${(current + 1) * -60}vw)`;
+        $carousel.style.transform = `translateX(${(current - 1) * -1920}px)`;
         current++;
     }
     else {
         current = 0;
-        $carousel.style.transform = `translateX(0vw)`;
+        $carousel.style.transform = `translateX(-1920px)`;
     }
 };
 

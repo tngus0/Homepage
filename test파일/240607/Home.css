@@ -1,7 +1,7 @@
 body, p {margin: 0;}
 body {scrollbar-width: none;}
 ::-webkit-scrollbar {display: none;}
-
+img {width: 1920px;height: 1080px;}
 
 #container {
     width: 1920px;
@@ -13,10 +13,39 @@ body {scrollbar-width: none;}
     position: relative;
 }
 
+#pageImg {
+    width: 1920px;
+    height: 1080px;
+    background-color: #c2faf4;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+#carousel {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+}
+
+.cell {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.3s ease-in-out;
+}
+
+.cell.active {
+    opacity: 1;
+}
+
 #titleLine {
     width: 1350px;
-    height: 150px;
-    background-color: #70e6d9;
+    height: 100px;
+    background-color: transparent;
     position: absolute;
     top: 0;
 }
@@ -27,34 +56,89 @@ body {scrollbar-width: none;}
 
 #titleIcon {
     width: 150px;
-    height: 150px;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #60aea5;
+    background-color: transparent;
+}
+
+#iconText {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 3px 3px 4px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #titleList {
-    width: 700px;
-    height: 150px;
+    width: 600px;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 300px;
-    background-color: #1eae9e;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listItem {
+    color: white;
+    font-size: 20px;
+    font-weight: inherit;
+    text-shadow: 3px 3px 4px #000;
+}
+
+#homeText {
+    color: white;
+    font-size: 16px;
+    text-shadow: 3px 3px 4px #000;
+    position: absolute;
+    top: 350px;
+    left: 100px;
 }
 
 #butLine {
     width: 1350px;
-    height: 400px;
-    background-color: #b3c7f6;
+    height: 250px;
+    background-color: transparent;
     position: absolute;
-    bottom: 0;
+    bottom: -40%;
+    /*bottom: 10%;*/
     display: flex;
     justify-content: space-around;
+    animation: pageIn 2s 1s forwards;
 }
 
 .butItem  {
-    width: 250px;
-    height: 300px;
+    width: 220px;
+    height: 250px;
     background-color: #abb0bd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.butItemTitle {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.butItemImg {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes pageIn {
+    from {bottom: -40%;}
+    to {bottom: 20%;}
 }

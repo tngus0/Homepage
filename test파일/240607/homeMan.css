@@ -1,0 +1,42 @@
+body, p {margin: 0;, padding: 0;}
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {display: none;}
+img {width: 1920px;height: 1080px;}
+
+#container {
+    width: 1920px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+#container::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, Edge용 */
+}
+
+#page2 {
+    width: 1920px;
+    height: 100vh;
+    background-color: #c2faf4;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#manTop10 {
+    position: absolute;
+    top: 5%;
+}
+
+#Top10 h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: inherit;
+    text-shadow: 3px 3px 5px #000;
+}
+

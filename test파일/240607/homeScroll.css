@@ -1,0 +1,8 @@
+.item {
+    width: 1920px;
+    height: 100vh;
+    scroll-snap-align: center;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}

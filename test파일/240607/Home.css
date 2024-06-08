@@ -1,11 +1,26 @@
-body, p {margin: 0;}
-body {scrollbar-width: none;}
+body, p {margin: 0;, padding: 0;}
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 ::-webkit-scrollbar {display: none;}
 img {width: 1920px;height: 1080px;}
 
 #container {
     width: 1920px;
-    height: 1080px;
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+#container::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, Edge용 */
+}
+
+#page1 {
+    width: 1920px;
+    height: 100vh;
     background-color: #c2faf4;
     overflow: hidden;
     display: flex;
@@ -140,5 +155,5 @@ img {width: 1920px;height: 1080px;}
 
 @keyframes pageIn {
     from {bottom: -40%;}
-    to {bottom: 20%;}
+    to {bottom: 5%;}
 }

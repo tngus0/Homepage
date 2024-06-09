@@ -1,14 +1,21 @@
 body, p {margin: 0;, padding: 0;}
-body {scrollbar-width: none;-ms-overflow-style: none;overflow: hidden}
+body {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 ::-webkit-scrollbar {display: none;}
 img {width: 1920px;height: 1080px;}
-a {text-decoration-line: none;}
-a:hover, a:active, a:visited, a:link {color: white;}
 
 #container {
     width: 1920px;
     height: 100vh;
     overflow-y: auto;
+    scrollbar-width: none;
+    scroll-snap-type: y mandatory;
+}
+
+#container::-webkit-scrollbar {
+    display: none; /* 크롬, 사파리, Edge용 */
 }
 
 #page1 {
@@ -64,14 +71,11 @@ a:hover, a:active, a:visited, a:link {color: white;}
 
 #titleIcon {
     width: 150px;
-    height: 100px;
+    height: 200px;
     position: absolute;
     top: 0;
     left: 0;
     background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 #iconText {
@@ -98,12 +102,10 @@ a:hover, a:active, a:visited, a:link {color: white;}
 
 .listItem {
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: inherit;
     text-shadow: 3px 3px 4px #000;
 }
-
-#listItemId {font-size: 20px;}
 
 #homeText {
     color: white;
@@ -154,11 +156,4 @@ a:hover, a:active, a:visited, a:link {color: white;}
 @keyframes pageIn {
     from {bottom: -40%;}
     to {bottom: 5%;}
-}
-
-#menuList {
-    width: 600px;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.8;
 }

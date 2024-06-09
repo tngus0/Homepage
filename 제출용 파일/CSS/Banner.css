@@ -75,7 +75,7 @@ body {
 .aButton {
     width: 13%;
     height: 7%;
-    font-size: 1.5vw;
+    font-size: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,7 @@ body {
         opacity: 0;
     }
     to {
-        transform: translateY(25vh);
+        transform: translateY(30vh);
         opacity: 1;
     }
 }

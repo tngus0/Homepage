@@ -114,51 +114,64 @@ a:hover, a:active, a:visited, a:link {color: white;}
     left: 100px;
 }
 
-#butLine {
-    width: 1350px;
-    height: 250px;
-    background-color: transparent;
+#foodList {
     position: absolute;
-    bottom: -40%;
-    /*bottom: 10%;*/
-    display: flex;
-    justify-content: space-around;
-    animation: pageIn 2s 1s forwards;
+    left: 0;
 }
 
-.butItem  {
-    width: 220px;
-    height: 250px;
-    background-color: #abb0bd;
+#menuList {
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 100px;
+    left: -300px;
+    transition: left .7s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+#listUp{
+    margin: 200px 0 0 0;
+    color: white;
+    gap: 50px;
+    /*position: relative;*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /*justify-content: center;*/
+    align-items: center;
 }
 
-.butItemTitle {
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#listUpTitle{
+    font-size: 70px;
 }
 
-.butItemImg {
-    width: 100%;
-    height: 250px;
+.listUpItem {
+    font-size: 30px;
+}
+
+#listHover {
+    width: 50px;
+    height: 100px;
+    background-color: goldenrod;
+    opacity: 0.7;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    transition: left .7s ease-in-out;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 @keyframes pageIn {
     from {bottom: -40%;}
     to {bottom: 5%;}
-}
-
-#menuList {
-    width: 600px;
-    height: 100vh;
-    background-color: black;
-    opacity: 0.8;
 }

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width-device-width, initial-scale=1.0">
     <title>오늘의 메뉴 추천</title>
 
-    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="KoreanFood.css">
 
 </head>
-<body>
+<body class="koreanFoodPage">
     <div id="container">
         <div class="item" id="page1">
             <div id="pageImg">
@@ -41,14 +41,22 @@
                     </div>
                 </div>
             </div>
-            <div id="homeText">
-                <h1>당신의 한 끼를 선택하세요</h1>
-                <h2>고민이 있는 당신의 한 끼를 선택해드립니다</h2>
-                <h2>요리를 하고싶은 당신에게 래시피를 제공합니다</h2>
+            <div id="foodList">
+                <div id="menuList">
+                    <div id="listUp">
+                        <div id="listUpTitle">한 식</div>
+                        <div class="listUpItem">밥 / 고기</div>
+                        <div class="listUpItem">찌개 / 전골</div>
+                    </div>
+                </div>
+                <div id="listHover">
+                    한식<br>
+                    종류
+                </div>
             </div>
         </div>
     </div>
-
     <script src="페이드인아웃.js"></script>
+    <script src="메뉴슬라이드.js"></script>
 </body>
 </html>

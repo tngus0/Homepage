@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Jua&family=Nanum+Brush+Script&family=Orbit&family=Poetsen+One&family=Single+Day&display=swap');
-a {text-decoration-line: none;}
-a:link {color: white;}
-a:visited {color: white;}
-a:hover {color: white;}
-a:active {color: white;}
+
+a { text-decoration-line: none; }
+a:link { color: rgb(103, 163, 255); }
+a:visited { color: rgb(103, 163, 255); }
+a:hover { color: rgb(50, 132, 255); }
+a:active { color: rgb(74, 77, 180); }
 
 body {
     margin: 0;
@@ -12,7 +13,7 @@ body {
     font-family: "Poetsen One", sans-serif;
     font-weight: 1000;
     font-style: normal;
-    background-image: url("../이미지/레스토랑사진.jpg");
+    background-image: url("사진/레스토랑사진.jpg");
     background-size: cover;
 }
 
@@ -29,7 +30,7 @@ body {
     top: 0;
     bottom: 0;
     left: 0;
-    background-image: url("../이미지/레스토랑사진.jpg");
+    background-image: url("사진/레스토랑사진.jpg");
     background-size: cover;
     background-position: center;
     z-index: 1;
@@ -43,29 +44,29 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-    /*animation-name: Size;*/
-    /*!*animation-duration: 1s;*! 해당 행동을 하는데 시간 */
-    /*!*animation-delay: 0.5s;*! 해당행동을 시작하는데 까지 기다리는 시간*/
-    /*animation-fill-mode: forwards;*/
     animation:
-        Size 1.5s 0.5s forwards, /*위 주석처리한 것을 하나로 줄인 것*/
-        MoveRight 1.5s 2.5s forwards,
-        splitApear 1.5s 2.5s forwards;
+            Size 1.5s 0.5s forwards,
+            MoveRight 1.5s 2.5s forwards,
+            splitApear 1.5s 2.5s forwards;
 }
 
 .content {
     color: white;
-    font-size: 5vw;
+    font-size: 6vw;
     text-transform: uppercase;
     position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     z-index: 3;
     opacity: 0;
-    transform: translateY(-50%);
     animation:
             TextInUp 2s 0.5s,
             MoveTextRight 1.5s 2.5s,
             ChangeBg 1.5s 2.5s;
     animation-fill-mode: forwards;
+    text-align: center;
 }
 
 .content p {
@@ -79,7 +80,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background-color: #c1e7f1;
     position: absolute;
     bottom: 17%;
     right: 0;
@@ -97,7 +98,6 @@ body {
     to { width: 50%; }
 }
 
-/*화면이 오른쪽으로 움직이는 에니메이션*/
 @keyframes MoveRight {
     from {
         left: 0;
@@ -105,20 +105,24 @@ body {
     }
     to {
         left: 50%;
-        opacity: 0.8;
+        opacity: 0.7;
     }
 }
 
 @keyframes MoveLeft {
-    from {right: 0;
-        opacity: 0;}
-    to {right: 30%;
-        opacity: 1;}
+    from {
+        right: 0;
+        opacity: 0;
+    }
+    to {
+        right: 30%;
+        opacity: 1;
+    }
 }
 
 @keyframes MoveTextRight {
-    from {left: 0%;}
-    to {left: 57%;}
+    from { left: 0%; }
+    to { left: 50%; }
 }
 
 @keyframes TextInUp {
@@ -127,28 +131,23 @@ body {
         opacity: 0;
     }
     to {
-        transform: translateY(25vh);
+        transform: translateY(0);
         opacity: 1;
     }
 }
 
 @keyframes ChangeBg {
     to {
-        background-image: url("../이미지/레스토랑사진.jpg");
+        background-image: url("사진/레스토랑사진.jpg");
         background-size: 200%;
         background-position: right center;
         background-clip: text;
         -webkit-background-clip: text;
-        /*color: transparent; !*글씨 투명하게*!*/
+        color: transparent;
     }
 }
 
 @keyframes Apear {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
-
-/*@keyframes splitApear {*/
-/*    from {opacity: 1;}*/
-/*    to {opacity: .7;}*/
-/*}*/

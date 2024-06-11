@@ -170,6 +170,7 @@ a:hover, a:active, a:visited, a:link {color: white;}
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
 
 @keyframes pageIn {
     from {bottom: -40%;}
@@ -205,3 +206,5 @@ a:hover, a:active, a:visited, a:link {color: white;}
     font-size: 30px;
   
  }
+=======
+>>>>>>> b657b21c78923c8c9651c6fab5c37742aab6d37a

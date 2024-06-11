@@ -170,3 +170,41 @@ a:hover, a:active, a:visited, a:link {color: white;}
     justify-content: center;
     align-items: center;
 }
+<<<<<<< HEAD
+
+@keyframes pageIn {
+    from {bottom: -40%;}
+    to {bottom: 5%;}
+}
+
+.list-container {
+    display: none; 
+    
+    opacity: 0.7;
+    background-color: white;
+    
+    padding: 40px;
+    font-size: 35px;
+    color:black;
+    width: 400px;
+    height: 200px;
+    top: 40%;
+    margin-top: 17%;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+ li{
+    list-style-type: none;
+    padding-left:0px ;
+ }
+ button{
+    border: none;
+    background-color:transparent;
+    color:white ;
+    font-size: 30px;
+  
+ }
+=======
+>>>>>>> b657b21c78923c8c9651c6fab5c37742aab6d37a

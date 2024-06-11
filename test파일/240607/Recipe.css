@@ -14,7 +14,7 @@ a:hover, a:active, a:visited, a:link {color: white;}
 #page1 {
     width: 1920px;
     height: 100vh;
-    background-color: #c2faf4;
+    /*background-color: #c2faf4;*/
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -24,7 +24,7 @@ a:hover, a:active, a:visited, a:link {color: white;}
 #pageImg {
     width: 1920px;
     height: 1080px;
-    background-color: #c2faf4;
+    /*background-color: #c2faf4;*/
     display: flex;
     justify-content: center;
     position: absolute;
@@ -105,16 +105,32 @@ a:hover, a:active, a:visited, a:link {color: white;}
 
 #listItemId {font-size: 20px;}
 
-#homeText {
-    color: white;
-    font-size: 16px;
-    text-shadow: 3px 3px 4px #000;
+#siteBox {
+    width: 1200px;  /*1920 - 1200 720   360*/
+    height: 600px;  /*1920 - 1200 720   360*/
+    background-color: gray;
     position: absolute;
-    top: 350px;
-    left: 100px;
+    top: 250px;
+    left: 360px;
+    opacity: .4;
+    box-shadow: 3px 3px 4px black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes pageIn {
-    from {bottom: -40%;}
-    to {bottom: 5%;}
+#siteBoxIcon, #siteBoxCommand {
+    width: 500px;
+    height: 500px;
+}
+
+#siteBoxIcon {
+    background-color: black;
+    opacity: 0.95;
+}
+
+#siteBoxCommand {
+    background-color: white;
+    z-index: 7;
 }

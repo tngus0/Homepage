@@ -170,8 +170,3 @@ a:hover, a:active, a:visited, a:link {color: white;}
     justify-content: center;
     align-items: center;
 }
-
-@keyframes pageIn {
-    from {bottom: -40%;}
-    to {bottom: 5%;}
-}

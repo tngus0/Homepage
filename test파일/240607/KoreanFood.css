@@ -185,10 +185,10 @@ a:hover, a:active, a:visited, a:link {color: white;}
     padding: 40px;
     font-size: 35px;
     color:black;
-    width: 400px;
-    height: 200px;
+    width: 1000px;
+    height: 400px;
     top: 40%;
-    margin-top: 17%;
+    margin-top: 13%;
     justify-content: center;
     align-items: center;
 

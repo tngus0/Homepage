@@ -1,62 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
     <title>오늘의 메뉴 추천</title>
 
-    <link rel="stylesheet" href="KoreanFood.css">
-
-</head>
-<body class="koreanFoodPage">
+    <link rel="stylesheet" href="KoreanFood.css" />
+  </head>
+  <body class="koreanFoodPage">
     <div id="container">
-        <div class="item" id="page1">
-            <div id="pageImg">
-                <div id="carousel">
-                    <div class="cell">
-                        <img src="사진/피자.jpg" alt="">
-                    </div>
-                    <div class="cell">
-                        <img src="사진/삼겹살.jpg" alt="">
-                    </div>
-                    <div class="cell">
-                        <img src="사진/스시.jpg" alt="">
-                    </div>
-                </div>
+      <div class="item" id="page1">
+        <div id="pageImg">
+          <div id="carousel">
+            <div class="cell">
+              <img src="사진/피자.jpg" alt="" />
             </div>
-            <div id="titleLine">
-                <div id="titleSet">
-                    <div id="titleIcon">
-                        <div id="iconText">
-                            <a href="Home.html"><p>오늘의<br>메뉴</p></a>
-                        </div>
-                    </div>
-                    <div id="titleList">
-                        <div class="listItem"><a href="KoreanFood.html">한식</a></div>
-                        <div class="listItem"><a href="ChineseFood.html">중식</a></div>
-                        <div class="listItem"><a href="JapaneseFood.html">일식</a></div>
-                        <div class="listItem"><a href="WesternFood.html">양식</a></div>
-                        <div class="listItem"><a href="LocalFood.html">분식</a></div>
-                        <div class="listItem" id="listItemId"><a href="">래시피<br>사이트</a></div>
-                    </div>
-                </div>
+            <div class="cell">
+              <img src="사진/삼겹살.jpg" alt="" />
             </div>
-            <div id="foodList">
-                <div id="menuList">
-                    <div id="listUp">
-                        <div id="listUpTitle">한 식</div>
-                        <div class="listUpItem">밥 / 고기</div>
-                        <div class="listUpItem">찌개 / 전골</div>
-                    </div>
-                </div>
-                <div id="listHover">
-                    한식<br>
-                    종류
-                </div>
+            <div class="cell">
+              <img src="사진/스시.jpg" alt="" />
             </div>
+          </div>
         </div>
+        <div id="titleLine">
+          <div id="titleSet">
+            <div id="titleIcon">
+              <div id="iconText">
+                <a href="Home.html"
+                  ><p>오늘의<br />메뉴</p></a
+                >
+              </div>
+            </div>
+            <div id="titleList">
+              <div class="listItem"><a href="KoreanFood.html">한식</a></div>
+              <div class="listItem"><a href="ChineseFood.html">중식</a></div>
+              <div class="listItem"><a href="JapaneseFood.html">일식</a></div>
+              <div class="listItem"><a href="WesternFood.html">양식</a></div>
+              <div class="listItem"><a href="LocalFood.html">분식</a></div>
+              <div class="listItem" id="listItemId">
+                <a href="">래시피<br />사이트</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <div id="foodList">
+          <div id="menuList">
+            <div id="listUp">
+              <div id="listUpTitle">한 식</div>
+              <button id="toggle-list1-btn">밥/면</button>
+              <button id="toggle-list2-btn">국/찌개/전골</button>
+              <button id="toggle-list1-btn">고기</button>
+            </div>
+          </div>
+          <div id="listHover">
+            한식<br />
+            종류
+          </div>
+        </div>
+        <div id="list-container1" class="list-container">
+        <ul>
+          <li>솥밥</li>
+          <li>비빔밥</li>
+          <li>제육덮밥</li>
+          <li>김치볶음밥</li>
+          <li></li>
+        </ul>
+      </div>
+
+      <div id="list-container2" class="list-container">
+        <ul>
+          <li>김치찌개</li>
+          <li>된장찌개</li>
+          <li>소고기 전골</li>
+          <li>미역국</li>
+          <li>콩나물국</li>
+        </ul>
+      </div>
+
+      <div id="list-container3" class="list-container">
+        <ul>
+          <li>삽겹살</li>
+          <li>한우</li>
+          <li>갈비찜</li>
+          <li>돼지갈비</li>
+          <li>족발</li>
+        </ul>
+      </div>
+      </div> 
+      
     </div>
     <script src="페이드인아웃.js"></script>
     <script src="메뉴슬라이드.js"></script>
-</body>
+    <script src="but.js"></script>
+  </body>
 </html>

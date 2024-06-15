@@ -1,49 +1,93 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
-    <title>오늘의 메뉴 추천</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Website</title>
     <link rel="stylesheet" href="../CSS/Recipe.css">
 
 </head>
 <body>
-    <div id="container">
-        <div class="item" id="page1">
-            <div id="pageImg">
-                <div id="carousel">
-                    <div class="cell">
-                        <img src="../사진/피자.jpg" alt="">
-                    </div>
-                    <div class="cell">
-                        <img src="../사진/삼겹살.jpg" alt="">
-                    </div>
-                    <div class="cell">
-                        <img src="../사진/스시.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div id="titleLine">
-                <div id="titleSet">
-                    <div id="titleIcon">
-                        <div id="iconText">
-                            <a href="../HTML/Home.html"><p>오늘의<br>메뉴</p></a>
-                        </div>
-                    </div>
-                    <div id="titleList">
-                        <div class="listItem"><a href="../HTML/KoreanFood.html">한식</a></div>
-                        <div class="listItem"><a href="../HTML/ChineseFood.html">중식</a></div>
-                        <div class="listItem"><a href="../HTML/JapaneseFood.html">일식</a></div>
-                        <div class="listItem"><a href="../HTML/WesternFood.html">양식</a></div>
-                        <div class="listItem"><a href="../HTML/LocalFood.html">분식</a></div>
-                        <div class="listItem" id="listItemId"><a href="../HTML/Recipe.html">래시피<br>사이트</a></div>
-                    </div>
-                </div>
-            </div>
+    <header>
+        <a href="../HTML/Home.html" id="home-button">오늘의<br>메뉴</a>
+        <h1>Recipes</h1>
+    </header>
+    <nav>
+        <ul class="categories">
+            <li>
+                <a href="#" class="category-button">한식</a>
+                <ul class="dropdown">
+                    <li><a href="https://www.10000recipe.com/recipe/1785098" target="_blank">김치찌개</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6863103" target="_blank">된장찌개</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6863296" target="_blank">불고기</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6839069" target="_blank">갈비찜</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6831083" target="_blank">파전</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6879533" target="_blank">잡채</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6839413" target="_blank">비빔밥</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="category-button">중식</a>
+                <ul class="dropdown">
+                    <li><a href="https://www.10000recipe.com/recipe/1785098" target="_blank">마파두부</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6863103" target="_blank">팔보채</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6863296" target="_blank">볶음밥</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6839069" target="_blank">탕수육</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6831083" target="_blank">깐풍기</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6879533" target="_blank">칠리새우</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6839413" target="_blank">훠궈</a></li>
+                </ul>
+            <li>
+                <a href="#" class="category-button">일식</a>
+                <ul class="dropdown">
+                    <li><a href="https://www.10000recipe.com/recipe/2791234" target="_blank">스시</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6852118" target="_blank">가라아게</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6872606" target="_blank">소바</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6901643" target="_blank">규카츠</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6880682" target="_blank">우동</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6901125" target="_blank">규동</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6919305" target="_blank">나베</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="category-button">양식</a>
+                <ul class="dropdown">
+                    <li><a href="https://www.10000recipe.com/recipe/6895534" target="_blank">피자</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6850505" target="_blank">파스타</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6920743" target="_blank">스테이크</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6848694" target="_blank">리조또</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6879534" target="_blank">샐러드</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6882172" target="_blank">오믈렛</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6841541" target="_blank">스프</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" class="category-button">분식</a>
+                <ul class="dropdown">
+                    <li><a href="https://www.10000recipe.com/recipe/6894096" target="_blank">떡볶이</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6858086" target="_blank">순대</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6895904" target="_blank">야채튀김</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6843418" target="_blank">김밥</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6909473" target="_blank">어묵</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6932428" target="_blank">떡꼬치</a></li>
+                    <li><a href="https://www.10000recipe.com/recipe/6919436" target="_blank">라면</a></li>
+                </ul>
+                
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="recipe-list">
+            <!-- Recipes will go here -->
         </div>
-    </div>
-
-    <script src="../JavaScript/페이드인아웃.js"></script>
+        <script src="../JavaScript/Recipe.js"></script>
+    </main>
 </body>
 </html>
+
+
+
+
+
+
+

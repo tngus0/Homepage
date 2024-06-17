@@ -114,7 +114,94 @@ a:hover, a:active, a:visited, a:link {color: white;}
     left: 100px;
 }
 
+#foodList {
+    position: absolute;
+    left: 0;
+}
+
+#menuList {
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 100px;
+    left: -300px;
+    transition: left .7s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+
+#listUp{
+    margin: 200px 0 0 0;
+    color: white;
+    gap: 50px;
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+}
+
+#listUpTitle{
+    font-size: 70px;
+}
+
+.listUpItem {
+    font-size: 30px;
+}
+
+#listHover {
+    width: 50px;
+    height: 100px;
+    background-color: goldenrod;
+    opacity: 0.7;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    position: absolute;
+    top: 45vh;
+    left: 0;
+    transition: left .7s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes pageIn {
     from {bottom: -40%;}
     to {bottom: 5%;}
+}
+
+.list-container {
+    display: none;
+
+    opacity: 0.7;
+    background-color: white;
+
+    padding: 40px;
+    font-size: 35px;
+    color:black;
+    width: 1000px;
+    height: 400px;
+    top: 40%;
+    margin-top: 13%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+li{
+    list-style-type: none;
+    padding-left:0px ;
+}
+button{
+    border: none;
+    background-color:transparent;
+    color:white ;
+    font-size: 30px;
+
 }

@@ -1,0 +1,52 @@
+#recommendButton {
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 11px;
+    background-color: #191919;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 4px #353535;
+    opacity: 0.75;
+}
+
+#recommendButton h2 {
+    margin: 0;
+}
+.recommend-box {
+    position: absolute;
+    top: 550px;
+    right: 400px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    animation: boxIn 0.7s 0s forwards;
+}
+
+.menu-options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.menu-type-btn {
+    margin: 0 5px;
+}
+
+.recommended-menu {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@keyframes boxIn {
+    from {opacity: 0;}
+    to {opacity: 0.8;}
+}
